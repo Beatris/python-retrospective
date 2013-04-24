@@ -1,6 +1,6 @@
 import unittest
 
-import solution
+from . import solution
 
 
 class HoroscopeTest(unittest.TestCase):
