@@ -1,13 +1,13 @@
 class TicTacToeBoard:
 
     def __init__(self):
-    self._moves = {'A3': ' ', 'B3': ' ', 'C3': ' ',
-                   'A2': ' ', 'B2': ' ', 'C2': ' ',
-                   'A1': ' ', 'B1': ' ', 'C1': ' '}
-    self._players = ['X','O']
-    self._places = list(self._moves.keys())
-    self._busy_places = []
-    self._turn = ' '
+        self._moves = {'A3': ' ', 'B3': ' ', 'C3': ' ',
+                       'A2': ' ', 'B2': ' ', 'C2': ' ',
+                       'A1': ' ', 'B1': ' ', 'C1': ' '}
+        self._players = ['X','O']
+        self._places = list(self._moves.keys())
+        self._busy_places = []
+        self._turn = ' '
 
     def __setitem__(self, place, player):
         if place not in self_places:
@@ -38,8 +38,8 @@ class TicTacToeBoard:
     A   B   C  \n'''.format(**self._moves)
     
     def game_status():
-        winning_combinations = \ 
-        [['A1', 'A2', 'A3'],
+        winning_combinations =[
+        ['A1', 'A2', 'A3'],
         ['B1', 'B2', 'B3'],
         ['C1', 'C2', 'C3'],
         ['A1', 'B1', 'C1'],
@@ -56,7 +56,7 @@ class TicTacToeBoard:
                 else:
                     return 'Game in progress.'
 
-        class InvalidMove(Exception):
+    class InvalidMove(Exception):
         pass
 
     class InvalidValue(Exception):
