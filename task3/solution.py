@@ -17,7 +17,7 @@ class Person:
         parent.add_child(self)
 
     def add_child(self, child):
-        if (child.birth_year - self.birth_year) >= 18
+        if (child.birth_year - self.birth_year) >= 18 \
         and child not in self._children:
             self._children.add(child)
             if self.gender == "F":
